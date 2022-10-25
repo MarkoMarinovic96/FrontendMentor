@@ -1,0 +1,122 @@
+:root {
+  font-family: 'Red Hat Display', sans-serif;
+
+  /* primary */
+  --p-blue: hsla(245, 75%, 52%, 1);
+  --p-dark-blue: hsla(223, 46%, 23%, 1);
+  --p-lt-blue: hsla(245, 83%, 68%, 1);
+  /* neutral */
+  --n-dark-gray: hsla(224, 23%, 55%, 1);
+  --n-lt-gray: hsla(228, 100%, 99%, 1);
+  --n-white: hsla(0, 0%, 100%, 1);
+  --n-bg: hsla(225, 100%, 94%, 1);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  
+}
+h2{
+  margin: 20px;
+}
+p{
+  line-height: 25px;
+  width: 90%;
+  text-align: center;
+  padding-left: 10%;
+  padding-bottom: 25px;
+}
+div#all{
+  border: 5px  hsla(245, 83%, 68%, 1);
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--n-white);
+  width: 453px;
+  margin: auto;
+  
+  z-index:-1;
+}
+div#pozadina{
+  background-image: url(./images/illustration-hero.svg);
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 21px;
+  border-radius: 10px;
+}
+
+div#sredina{
+  border: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: var(--n-lt-gray);
+
+  
+}
+img#music{
+  float:left;
+  width: 25%;
+  
+  
+ 
+}
+ul{
+  float: left;
+  width: 40%;
+  padding-left: 10px;
+  justify-content: center;
+}
+li{
+  list-style-type: none;
+  
+}
+div#ankor{
+  float: right;
+}
+a#desni{
+  color: var(--p-blue);
+  padding-right: 10px;
+}
+a#desni:active{
+  color: var(--p-lt-blue);
+}
+
+div#btn.payment{
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  background-color: var(--p-blue);
+}
+a#apay{
+text-decoration: none;
+color: white;
+
+}
+a#acan{
+  text-decoration: none;
+  color: var(--n-dark-gray);
+}
+a#acan:active{
+  color: black;
+}
+a>div#btn.payment:active{
+  background-color: var(--p-lt-blue);
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+}
